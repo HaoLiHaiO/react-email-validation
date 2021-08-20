@@ -8,7 +8,6 @@ export const RegValidation = () => {
     const classes = useStyles();
     
     const [ email, setEmail ] = useState('');
-    console.log(email)
    
     return (
         <section>
@@ -21,7 +20,9 @@ export const RegValidation = () => {
                 id="standard-basic" 
                 label="Standard"
                 value={email}
-                onChange={(event) => {setEmail(event.target.value)}} />
+                onChange={(event) => {setEmail(event.target.value)}}
+                error={!isValidRegEmail(email)}
+                helperText={isValidRegEmail(email) ? '' : 'Invalid email!'} />
                 <TextField 
                 className={classes.txtField} 
                 id="filled-basic" 
