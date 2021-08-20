@@ -5,6 +5,9 @@ This project is licensed under the terms of the MIT license.
 - I'm creating several components with different email validation methods which
 can be reused anywhere.
 
+- I use several input fields to see how different MUI fields look like with 
+input validation.
+
 ## Tool versions
 
 Use a tool like asdf to control versions. Tool versions can be found in 
