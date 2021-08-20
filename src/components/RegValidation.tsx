@@ -11,7 +11,7 @@ export const RegValidation = () => {
    
     return (
         <section>
-            <Typography variant="h2">
+            <Typography variant="h4">
                 Form validation with Regex
             </Typography>
             <form className={classes.form} noValidate autoComplete="off">
