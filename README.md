@@ -1,3 +1,5 @@
+This project is licensed under the terms of the MIT license.
+
 # Email Validation in React
 
 - I'm creating several components with different email validation methods which
