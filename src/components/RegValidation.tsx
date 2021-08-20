@@ -8,6 +8,8 @@ export const RegValidation = () => {
     const classes = useStyles();
     
     const [ email, setEmail ] = useState('');
+    const [ secondEmail, setSecondEmail ] = useState('');
+    const [ thirdEmail, setThirdEmail ] = useState('');
    
     return (
         <section>
@@ -27,12 +29,20 @@ export const RegValidation = () => {
                 className={classes.txtField} 
                 id="filled-basic" 
                 label="Filled" 
-                variant="filled" />
+                variant="filled"
+                value={secondEmail}
+                onChange={(event) => {setSecondEmail(event.target.value)}}
+                error={!isValidRegEmail(secondEmail)}
+                helperText={isValidRegEmail(secondEmail) ? '' : 'Invalid email!'} />
                 <TextField 
                 className={classes.txtField} 
                 id="outlined-basic" 
                 label="Outlined" 
-                variant="outlined" />
+                variant="outlined"
+                value={thirdEmail}
+                onChange={(event) => {setThirdEmail(event.target.value)}}
+                error={!isValidRegEmail(thirdEmail)}
+                helperText={isValidRegEmail(thirdEmail) ? '' : 'Invalid email!'} />
             </form>
         </section>
     )
