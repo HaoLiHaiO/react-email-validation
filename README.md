@@ -10,7 +10,7 @@ input validation.
 
 ## Tool versions
 
-Use a tool like asdf to control versions. Tool versions can be found in 
+Use a tool like [asdf](https://asdf-vm.com/) to control versions. Tool versions can be found in 
 .tool-versions
 
 - 16.7.0 for nodejs
