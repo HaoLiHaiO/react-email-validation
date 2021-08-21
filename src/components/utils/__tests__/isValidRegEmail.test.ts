@@ -1,15 +1,16 @@
 import isValidRegEmail from '../isValidRegEmail';
 
 describe('isValidRegEmail', () => {
-    test('returns true when email is valid', () => {
-      expect(isValidRegEmail('hello@hotmail.com')).toBe(true);
+    it('returns true when email is valid', () => {
+      expect(isValidRegEmail('loremipsum@validemail.com')).toBe(true);
+      expect(isValidRegEmail('lorem-ipsum@validemail.com')).toBe(true);
+      expect(isValidRegEmail('loremipsum@validemail.com')).toBe(true);
     });
 
-    test('returns false when email dot is in first position of the email', () => {
-        expect(isValidRegEmail('.hello@hotmail.com')).toBe(false);
-      });
-
-      test('returns false when email is empty', () => {
-        expect(isValidRegEmail('.hello@hotmail.com')).toBe(false);
+    it('returns false when email is invalid', () => {
+        expect(isValidRegEmail('.loremipsum@validemail.com')).toBe(false);
+        expect(isValidRegEmail('loremipsum@')).toBe(false);
+        expect(isValidRegEmail('@validemail.com')).toBe(false);
+        expect(isValidRegEmail('')).toBe(false);
       });
   });
