@@ -4,13 +4,13 @@ import useStyles from './styles'
 export const HtmlValidation = () => {
     const classes = useStyles();
     return (
-        <>
+        <section>
         <Typography className={classes.titles} variant="h4">
             Form validation with HTML
         </Typography>
         <form action="">
             <input className={classes.htmlInput} type="email" id="email" name="email" placeholder="email" required />
         </form>
-        </>
+        </section>
     )
 }
