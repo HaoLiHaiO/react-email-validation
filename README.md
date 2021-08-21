@@ -8,6 +8,11 @@ can be reused anywhere.
 - I use several input fields to see how different MUI fields look like with 
 input validation.
 
+### Notes
+
+- Client side email validation is not an exhaustive security measure. It is 
+good for the UX. Email should always be validated on the server side as well.
+
 ## Tool versions
 
 Use a tool like [asdf](https://asdf-vm.com/) to control versions. Tool versions can be found in 
